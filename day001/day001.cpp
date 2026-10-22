@@ -9,6 +9,8 @@ int main() {
 }
 */
 
+
+/*
 #include <iostream>
 using namespace std;
 
@@ -29,3 +31,49 @@ int main()
 	cout << sum << endl;
 	return 0;
 }
+*/
+
+
+
+#include <iostream>
+using namespace std;
+/*
+int main()
+{
+	int n;
+	cout << "输入比10小的整数n:" << endl;
+	cin >> n;
+	//遍历数组
+	int arr[10];
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+	}
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << "\n";
+	return 0;
+}
+*/
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	double sum = 0;
+	cin >> n;
+	int arr[100];
+
+	for (int i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+		sum += arr[i];
+	}
+	sum /= n; //输出平均值
+	cout << sum << endl;
+	return 0;
+}
+
